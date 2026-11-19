@@ -1,4 +1,4 @@
-# garrett, the Sentinel agent, for Homebrew on macOS and Linux.
+# garrett, the agent of sentinels, for Homebrew on macOS and Linux.
 #
 # packaging/package-managers.py fills in the version and each bundle's SHA-256 for a release, and the release
 # publishes the result to the project's tap:  brew install gary23w/sentinels/garrett
@@ -7,24 +7,24 @@
 # never from Homebrew's, which the user who installed it can write to: the install line in the caveats copies it
 # there (the same installer as the release bundle) and starts it now and at every boot.
 class Garrett < Formula
-  desc "Host intrusion sentinel that stops what it catches"
+  desc "Agent of sentinels: host intrusion sentinel that stops what it catches"
   homepage "https://github.com/gary23w/sentinels"
-  version "1.9.2"
+  version "1.9.3"
   license "MIT"
 
   on_macos do
-    url "https://github.com/gary23w/sentinels/releases/download/v1.9.2/garrett-macos.tar.gz"
-    sha256 "8e736fd8da8d6ef53546f8e747697d72c0ed9f014b3a09df59aafc3cb09687a3"
+    url "https://github.com/gary23w/sentinels/releases/download/v1.9.3/garrett-macos.tar.gz"
+    sha256 "99f722154ee6a9ad1d44e1a09f7db9fff63852faf02d1ab294df1d18edc319c0"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/gary23w/sentinels/releases/download/v1.9.2/garrett-linux-x86_64.tar.gz"
-      sha256 "0a5fe060bb6cfabb30d555f9af5fc503dd56c86d299961087f7b3bdfc4da9d2d"
+      url "https://github.com/gary23w/sentinels/releases/download/v1.9.3/garrett-linux-x86_64.tar.gz"
+      sha256 "a415eb41f6ba2556b4a2bafc03b44821aa7be436a38c6592652d7b3cdc6aa690"
     end
     on_arm do
-      url "https://github.com/gary23w/sentinels/releases/download/v1.9.2/garrett-linux-aarch64.tar.gz"
-      sha256 "29c5a90c59ea4767d6a0c97ed111df0ca301f31afb8f115ef7d683a9db4e4de6"
+      url "https://github.com/gary23w/sentinels/releases/download/v1.9.3/garrett-linux-aarch64.tar.gz"
+      sha256 "10e387a05964740a0bc838f2b08a4a466b47daec879f3f7df365bb1f381817d0"
     end
   end
 
